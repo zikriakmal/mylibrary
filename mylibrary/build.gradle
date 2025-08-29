@@ -49,8 +49,9 @@ afterEvaluate {
                 artifactId = 'mylibrary'                  // library name
                 version = '1.0.0'                         // library version
 
-                // Use the release .aar file
-                artifact("$buildDir/outputs/aar/${project.name}-release.aar")
+                afterEvaluate {
+                    from(components.release)
+                }
             }
         }
     }
