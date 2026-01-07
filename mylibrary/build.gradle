@@ -49,7 +49,7 @@ afterEvaluate {
             release(MavenPublication) {
                 groupId = 'com.github.zikriakmal' // replace with your GitHub username
                 artifactId = 'mylibrary'                  // library name
-                version = '1.0.1'                         // library version
+                version = '1.0.3'                         // library version
 
                 // Use the release .aar file
                 artifact("$buildDir/outputs/aar/${project.name}-release.aar")
